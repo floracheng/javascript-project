@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            html, body, div /*<- terminology: selectors*/ {
+                margin: 5;
+                padding: 10 5 10 5;
+                box-sizing: border-box;
+                word-break: break-word;
+            }
+            
+            div.container {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+          
+            .container div {
+                padding: 0;
+                width: 20%;
+                border: 1px solid blue;
+                box-sizing: border-box;
+            }
+            
+            @media screen and (max-width: 350px) {
+              .container div{
+                width: 100%;
+              }
+        }
+
+        </style>
+    </head>
+    <body>
+        <h3>Resources</h3>
+        <div class= "container">
+            <div>Invoices and recurring payments</div>
+            <div>eCommerce</div>
+            <div>Appointments</div>
+            <div>App Marketplace</div>
+        </div>
+    <script src= "2b-exercise.js"> </script>
+    </body>
+</html>
